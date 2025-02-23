@@ -7,4 +7,4 @@ Bu ders, öğrencilerin üretken yapay zeka teknolojilerini kullanarak chatbot g
 * Doğal dil işleme ve diyalog yönetimi prensiplerini anlayacak,
 *    Gerçek dünya senaryolarına uygun chatbot uygulamaları geliştirme deneyimi kazanacaktır.
 
-![image](https://github.com/user-attachments/assets/38a34bc1-cac8-427b-b8a2-23c6d002615b)
+![image](https://github.com/user-attachments/assets/f2955435-6052-4fea-a273-ba59f9df40bf)
