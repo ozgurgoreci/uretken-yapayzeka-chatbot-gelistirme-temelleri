@@ -14,6 +14,8 @@ Chatbot, kullanıcılara metin tabanlı veya sesli olarak yanıt verebilen bir y
 
 Chatbotlar, **kullanıcı deneyimini iyileştirmek**, **iş süreçlerini hızlandırmak** ve **maliyetleri düşürmek** için yaygın olarak kullanılır. Çeşitli sektörlerde operasyonel kolaylık sağlar.
 
+![{79C24B60-ED3F-4A80-A56E-4F2BC769B008}](https://github.com/user-attachments/assets/39d4074c-3dc1-42c5-9b9e-f435b3ad4580)
+
 
 ## Tarihçe ve Gelişim Süreci
 Chatbotların gelişimi, bilgisayar bilimlerindeki yapay zeka ilerlemeleri ile yakından ilişkilidir. 
@@ -30,6 +32,9 @@ Chatbotların gelişimi, bilgisayar bilimlerindeki yapay zeka ilerlemeleri ile y
 * **ChatGPT (2022):** OpenAI tarafından geliştirilen, üretken yapay zeka (Generative AI) tabanlı chatbot.
 * **Google Gemini (2023) & Microsoft Copilot (2023):** Yeni nesil yapay zeka modellerinin kurumsal entegrasyonlara girişi.
 
+![{0F58257D-7D17-44DC-870A-38347D6784BA}](https://github.com/user-attachments/assets/187c964d-77d9-4140-a722-eedcdfa129df)
+
+
 # Günümüzde Chatbotların Kullanım Alanları
 
 Chatbot teknolojisi, günümüzde birçok alanda kullanılmaktadır:
@@ -43,6 +48,8 @@ Chatbot teknolojisi, günümüzde birçok alanda kullanılmaktadır:
 * Kurumsal İç İletişim: Çalışanların bordro, izin talepleri gibi işlemlerini hızlandırma.
 
 Chatbot teknolojisi, üretken yapay zeka ile birleşerek iş dünyasında verimlilik artırıcı bir araç haline gelmiştir. Geleneksel kural tabanlı chatbotlardan, bağlamsal anlayışa sahip, insan benzeri yanıtlar üreten yapay zeka tabanlı chatbotlara doğru büyük bir evrim yaşanmıştır.
+
+
 
 **Kaynaklar**
 
