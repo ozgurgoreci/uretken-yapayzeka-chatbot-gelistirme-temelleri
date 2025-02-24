@@ -80,4 +80,5 @@ Chatbotlar, kullanım amaçlarına ve teknik altyapılarına göre farklı kateg
 * **Kullanıcı Deneyimi (UX):** Chatbotun, kullanıcıların en hızlı ve etkili şekilde yanıt almasını sağlayacak şekilde tasarlandığından emin olun. Yanlış anlaşılmaları en aza indirmek için kullanıcı dostu arayüzler ve akıllı yönlendirmeler kullanın.
 
 
- 
+ ![{369BCFE7-2D2A-493E-BB89-3CD33AAF1C5C}](https://github.com/user-attachments/assets/1eae63af-0b2c-4196-8972-3613ecae2d77)
+
