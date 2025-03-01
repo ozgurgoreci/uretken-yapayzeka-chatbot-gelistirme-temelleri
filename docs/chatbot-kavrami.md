@@ -49,7 +49,8 @@ Chatbot teknolojisinin gelişimi, büyük dil modelleri ve yapay zekâ algoritma
 Bugün chatbotlar, müşteri hizmetlerinden sağlık sektörüne, eğitimden e-ticarete kadar birçok alanda aktif olarak kullanılmaktadır. Gelecekte ise, daha gelişmiş öğrenme algoritmaları ve daha güçlü yapay zekâ modelleriyle insan-makine etkileşimini en üst seviyeye taşıyan bir teknoloji hâline gelmeleri beklenmektedir.
 
 
-![{0F58257D-7D17-44DC-870A-38347D6784BA}](https://github.com/user-attachments/assets/187c964d-77d9-4140-a722-eedcdfa129df)
+![{8B91A45C-9478-49F9-85B8-6EE4845589AB}](https://github.com/user-attachments/assets/e05f7d35-1faf-4930-8ea9-a7f734ddb327)
+
 
 
 # Günümüzde Chatbotların Kullanım Alanları
