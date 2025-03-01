@@ -14,7 +14,8 @@ Chatbot, kullanıcılara metin tabanlı veya sesli olarak yanıt verebilen bir y
 
 Chatbotlar, **kullanıcı deneyimini iyileştirmek**, **iş süreçlerini hızlandırmak** ve **maliyetleri düşürmek** için yaygın olarak kullanılır. Çeşitli sektörlerde operasyonel kolaylık sağlar.
 
-![{79C24B60-ED3F-4A80-A56E-4F2BC769B008}](https://github.com/user-attachments/assets/39d4074c-3dc1-42c5-9b9e-f435b3ad4580)
+![{9A26F914-1680-4E68-8F9F-464F05EC4894}](https://github.com/user-attachments/assets/d6f59b3b-515b-4c01-866b-32ce0ae3f574)
+
 
 
 ## Tarihçe ve Gelişim Süreci
