@@ -1,5 +1,5 @@
 * Başlarken
-    * [Ben kimim?](baslarken#ben-kimim)
+    * [Ben kimim?](baslarken.md#ben-kimim)
     * [Dersin Amacı](baslarken.md#dersin-amaci)
     * [Ön Koşullar](baslarken.md#Ön-koşullar)
 * Chatbot Kavramı ve Kullanım Alanları
