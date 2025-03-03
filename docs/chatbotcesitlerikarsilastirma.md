@@ -2,7 +2,7 @@
 
 Chatbot teknolojisi, günümüzde işletmelerin müşteri ilişkilerini yönetme biçimini kökten değiştiren bir yenilik olarak öne çıkmaktadır. Her geçen gün gelişen bu teknoloji, işletmelere müşteri hizmetlerinden iç operasyonlara kadar geniş bir yelpazede kullanım imkânı sunmaktadır. Ancak chatbotlar, tek bir modelden ibaret değildir; farklı amaçlara ve teknik altyapılara göre çeşitlenmektedir. Bu bölümde, chatbot türlerini derinlemesine ele alarak hangi alanlarda nasıl bir fayda sağladıklarını keşfedeceğiz.
 
-## Menü veya Düğme Tabanlı Chatbotlar
+## Menü veya Button Tabanlı Chatbotlar
 
 En temel chatbot modellerinden biri, kullanıcıları belirli seçenekler doğrultusunda yönlendiren menü veya düğme tabanlı chatbotlardır. Kullanıcılar, serbest metin girişinden ziyade, kendilerine sunulan seçenekleri tıklayarak ihtiyaç duydukları bilgiye ulaşır. Genellikle belirli bir hizmet veya ürün hakkında yönlendirme yapmak amacıyla tasarlanırlar. 
 
