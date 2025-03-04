@@ -11,27 +11,3 @@
 Bu ders, sıfırdan üretken yapay zeka (Generative AI) süreçlerini ele alarak, bu modellerin chatbot geliştirme sürecinde nasıl etkin bir şekilde kullanılacağını öğretmeyi amaçlamaktadır. Katılımcılar, Python programlama dili ve temel yazılım prensiplerini öğrenerek chatbot projelerine uygulayacak, Retrieval Augmented Generation (RAG) ve vektör veri tabanları ile verimli bilgi erişimi sağlamayı deneyimleyeceklerdir.
 
 Ayrıca, Langchain, LangGraph ve ilgili araçlar (Langsmith, Langserve) kullanarak chatbotları oluşturma, özelleştirme ve iyileştirme becerisi kazanacaklardır. Gerçek zamanlı veri işleme, dağıtım (deployment) ve ölçeklenebilirlik gibi kritik konular işlenerek, yapay zeka destekli chatbot projelerinin gerçek dünyada uygulanabilir hale getirilmesi hedeflenmektedir.
-
-## Ön Koşullar
-
-Bu ders, yapay zeka tabanlı chatbot geliştirme sürecini sıfırdan ele alsa da, katılımcıların dersi verimli şekilde takip edebilmesi için aşağıdaki temel bilgilere sahip olmaları önerilir:
-
-1- Temel Programlama Bilgisi:
-
-* Python dilinde temel seviyede kod yazma, değişkenler, döngüler, fonksiyonlar ve nesne yönelimli programlama (OOP) kavramlarına aşinalık.
-
-2- Veri Yapıları ve Algoritmalar:
-* Listeler, sözlükler, kümeler gibi temel veri yapılarının anlaşılması.
-* Temel algoritma mantığını kavrayabilme (arama, sıralama vb.).
-
-3- Temel Yapay Zeka ve Makine Öğrenmesi Bilgisi (Tercihen):
-
-* Yapay zeka ve makine öğrenmesi kavramlarına giriş seviyesinde aşinalık.
-* Büyük dil modelleri (LLM) ve derin öğrenme hakkında temel bilgiye sahip olmak avantaj sağlayacaktır.
-
-4- API ve Veri İşleme Konularına Giriş:
-
-* JSON formatı ve API'ler ile temel veri alışverişi yapabilme.
-* Veriyi okuma, işleme ve analiz etme konusunda temel bilgi.
-
-Bu ön koşullara sahip olmayan katılımcılar için, dersin başında temel konulara yönelik kısa bir giriş yapılacaktır. Ancak, daha verimli bir öğrenme süreci için önceden Python programlama ve temel veri işleme konularında pratik yapılması önerilir.
