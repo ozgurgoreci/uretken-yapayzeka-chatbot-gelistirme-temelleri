@@ -77,3 +77,107 @@ Eğitim verisi, modelin öğrenmesi için kullandığımız veri kümesidir. Mod
 
 Özetle, eğitim verisi modelin **hafızasını şekillendirir**. Bu veri ne kadar çeşitli ve kapsamlı olursa modelin öğrenebileceği kapsam da o kadar geniş olur. Ancak sadece eğitim verisine bakarak modelin başarısını değerlendiremeyiz; bu yüzden farklı veri setlerine de ihtiyaç duyarız (doğrulama ve test verileri gibi).
 
+## Validation Data (Doğrulama Verisi) Nedir?
+
+Doğrulama verisi, model eğitilirken kullanılan ve **modelin performansını izlemek/ayarlarını yapmak için** ayrılan veri setidir. Bu veri, eğitim sırasında ara kontrol noktası gibi görev yapar. Model, eğitim sırasında belirli aralıklarla doğrulama seti üzerinde test edilir ki aşırı uyum **(overfitting)** olup olmadığı anlaşılsın ve gerekiyorsa hiperparametre adı verilen model ayarları bu sonuçlara göre ayarlansın​
+
+Doğrulama verisi, eğitim verisinden ayrı tutulur, ancak model bu veriye bakarak kendini güncellemez (yani hatalarından öğrenmez) – sadece performansına bakılır. Amaç, modelin **görmediği veriye karşı** başarısını eğitim sırasında takip etmektir. Eğer model doğrulama verisinde kötüleşmeye başlıyorsa, bu genelde aşırı öğrenmeye başladığının bir işaretidir ve eğitim durdurulabilir veya ayarları değiştirilebilir.
+
+**Gerçek hayattan benzetme:** Yine öğrenci örneğine dönersek, öğrenci sınavdan önce kendi kendine küçük bir deneme sınavı yapabilir veya öğretmeni ona küçük bir **quiz** uygulayabilir. Bu quiz sonuçlarına bakarak öğrenci hangi konularda eksik olduğunu görür ve gerekirse daha fazla çalışır. Quiz sorularının amacı not vermek değil, öğrenciyi sınava daha iyi hazırlamaktır. Doğrulama verisi de model için böyle bir rol oynar – bir nevi **prova sınavı** gibidir.
+
+Önemli nokta, doğrulama seti de hiçbir şekilde eğitim setine dahil edilmez, model bu veriyi “görerek” öğrenmez. Sadece performans ölçümü için kullanılır. En sonunda ise modelin asıl değerlendirmesi test setiyle yapılır (doğrulama seti ile değil)​
+
+## Test Data (Test Verisi) Nedir?
+
+Test verisi, modelin eğitimi tamamlandıktan sonra, gerçek dünyada nasıl performans göstereceğini ölçmek için kullanılan, **tamamen saklanmış** ve model tarafından görülmemiş veri kümesidir. Bu verilerle modelin tahminleri alınır ve sonuçlar değerlendirilir. Test verisinin amacı, modelin genel başarı düzeyini ve hatalarını samimi bir şekilde ortaya koymaktır.
+
+Yine öğrenci benzetmemize bakarsak, test verisi **asıl sınav sorularıdır**. Öğrenci tüm hazırlığını yapmıştır (model eğitilmiştir), belki kendini denemiştir (doğrulama yapılmıştır), artık sınav vakti gelmiştir. Sınavda karşısına çıkan sorular, çalıştığı kaynaklarda birebir görmediği sorulardır. Burada aldığı sonuç, onun o konuları gerçekten öğrenip öğrenmediğinin ölçüsüdür. Model için de test verisindeki performansı, eğitimin gerçekten işe yarayıp yaramadığını gösterir.
+
+Test verisi ile modelin başarımını ölçerken, genellikle **metrikler** hesaplanır: Örneğin yüzde kaç doğrulukla bildi, hataları nelerdi vs. Bu sonuçlar modelin gerçek hayata ne kadar hazır olduğunu gösterir. Eğer test verisinde iyi sonuç veriyorsa, modeli gerçek dünyada (üretimde) kullanmak üzere güvenimiz artar. Yok eğer test verisinde başarısızsa, modeli yeniden gözden geçirmek gerekir (belki daha fazla veri ile yeniden eğitmek veya model yapısını değiştirmek gibi).
+
+Özetle, **eğitim verisi öğrenme içindir, doğrulama verisi ayar ve izleme içindir, test verisi ise nihai değerlendirme içindir**. ​Bu ayrım, makine öğrenimi modelinin adil ve genel performansını ölçebilmek için kritik öneme sahiptir.
+
+## Overfitting (Aşırı Uyum) Nedir?
+
+Overfitting, bir makine öğrenimi modelinin **eğitim verisine aşırı derecede uyum sağlaması**, ama yeni verilere genelleyememesi durumudur​.Aşırı uydurmuş bir model, adeta eğitim verisini **ezberlemiştir** – bu yüzden eğitim verisinde hatasız sonuç verebilir; fakat eğitimde görmediği yeni bir veriyle karşılaştığında beklenmedik hatalar yapar. Bu istenmeyen bir durumdur, çünkü modelin amacı sadece ezberlemek değil, öğrendiklerini genelleştirip her türlü veriye uygulanabilir hale getirmektir.
+
+**Gerçek hayattan basit bir örnek:** Bir öğrenci düşünün, matematik sınavına çalışırken elindeki çözümlü soruları ve cevaplarını ezberliyor. Sınavda karşısına benzer sorular gelirse çok iyi yapıyor; ancak soru biraz farklılaşırsa (örneğin sayılar değişir veya farklı bir formül sorulur) bocalıyor ve soruyu çözemiyor. Bu öğrenci aslında konuyu tam anlamamış, sadece gördüğü soruların cevaplarını ezberlemiş. Modelde overfitting de aynen böyledir. Model eğitim verisindeki örnekleri ezberlerse, o örneklerde mükemmel sonuç verir ama küçük bir değişiklik olduğunda ne yapacağını bilemez.
+
+Teknik olarak, aşırı uyum çoğunlukla model çok karmaşık olduğunda veya eğitim verisi göreceli olarak az ve sınırlı olduğunda ortaya çıkar. Model, verideki gürültü veya rastlantısal ayrıntıları dahi öğrenir. Örneğin, kedi fotoğraflarını öğrenen bir model düşünelim: Eğitimdeki bir kedi fotoğrafında arka planda hep bir belirli renk duvar olsun. Model kediye dair özelliklerle birlikte belki o duvarın rengini de “kedi özelliği” olarak öğrenmiş olabilir. Sonra farklı renkte arka planı olan bir kedi fotoğrafı gösterildiğinde tanıyamayabilir, çünkü **yanlış bir detayı** öğrenmiştir
+
+Kaynaklarda bu durum şöyle özetlenir: _“Aşırı öğrenme durumunda modelimiz eğitim kümesinde çok iyi bir performans verirken, test kümesinde daha başarısız bir performans gösterir. Eğitim kümesinden elde ettiği bilgileri genelleyemez. Bu duruma örnek olarak bir öğrencinin sınava girmeden önce bilgileri çok iyi bir şekilde ezberleyip, sınava girince farklı türde sorular ile karşılaşıp başarısız olması verilebilir.”​_
+
+**Overfitting’i önlemek için** çeşitli yöntemler kullanılır (örneğin daha fazla veri toplamak, modeli basitleştirmek, düzenlileştirme/regularization teknikleri uygulamak, **doğrulama verisi** ile erken durdurma yapmak gibi). Ama bu konular ileri düzey konular olup, temelde bilinmesi gereken: aşırı uydurma, modelin **yeni durumlarda başarısız olması** demektir.
+
+## Epoch (Dönem) Nedir?
+
+Epoch (Türkçesiyle “dönem”), makine öğrenimi eğitim sürecinde, modelin tüm eğitim veri kümesini baştan sona bir kez görmesi anlamına gelir. Bir eğitim süreci genellikle birden fazla epoch içerir. Örneğin 5 epoch boyunca eğitim yapıyoruz demek, model eğitimdeki tüm verileri 5 kez gözden geçirecek demektir.
+
+Bunu şöyle düşünebiliriz: 1000 resimden oluşan bir eğitim veri setimiz varsa, 1 epoch’ta bu 1000 resmin her biri model tarafından işlenip öğrenmeye katkı yapar. 10 epoch eğitirsek, model toplamda verisetini 10 kez taramış olur. Epoch sayısı bir hiperparametredir, yani eğitim başlamadan önce belirlediğimiz bir ayardır; genellikle eğitim yeterince öğrenene veya doğrulama başarımı durmaya başlayana kadar birkaç, birkaç yüz hatta binlerce epoch denenebilir​
+
+**Anlaması kolay bir örnekle açıklayalım:** Diyelim ki ezberlemeniz gereken 50 tane kelime var. Bu 50 kelimeyi bir kez baştan sona çalışmanız bir epoch olsun. Eğer 5 epoch çalışırsanız, bu listeyi 5 defa tekrar etmiş olursunuz. Genelde listeyi ne kadar çok tekrar ederseniz o kadar iyi akılda kalır; fakat bir yerden sonra verim azalmaya başlayabilir veya gereğinden fazla tekrar yapıp zaman kaybedebilirsiniz. Model eğitimi de buna benzer: Veriyi birkaç kez göstermek genelde modelin öğrenmesini artırır, ancak çok fazla epoch yaparsak model **aşırı öğrenme** riskiyle karşılaşabilir. Bu yüzden uygun epoch sayısını bulmak önemlidir.
+
+Özetle, epoch sayısı modelin **eğitim turu** sayısıdır. “1 epoch = tüm veri bir kere gösterildi”. Bu kavram, eğitim sürecini adımlara bölmek ve her adımda modeli değerlendirmek için kullanılır. Örneğin her epoch sonunda doğrulama setiyle modele bakılıp performansı ölçülür, böylece kaç epoch’un ideal olduğuna karar verilebilir.
+
+## Transfer Learning (Transfer Öğrenimi) Nedir?
+
+Transfer öğrenimi, bir makine öğrenimi modelinin bir görevde öğrendiği bilgiyi başka bir benzer göreve aktarması yaklaşımıdır​. Normalde, her yeni görev için modeli sıfırdan eğitmemiz gerekebilir; ancak transfer öğrenimi sayesinde, modelin halihazırda öğrendiği becerileri yeniden kullanabiliriz ve böylece **daha az veriyle**, **daha hızlı eğitim** mümkün olur.
+
+Bunu bir örnekle somutlaştıralım: Diyelim ki İngilizce biliyorsunuz ve şimdi İspanyolca öğrenmek istiyorsunuz. İngilizce bilginiz size İspanyolca öğrenirken avantaj sağlar – pek çok kelime benzer, alfabe aynı, dil yapıları benzerlik gösteriyor. Yani İngilizce bilgisi, İspanyolca öğrenimine transfer oluyor (aktarılıyor). Tam tersi, eğer İngilizce bilmeseydiniz ve Çince öğrenmeye kalksaydınız, elinizde işe yarar pek bir bilgi olmayacaktı, sıfırdan öğrenmeniz gerekecekti. İşte yapay zekâ modelleri de benzer şekilde, bir alanda öğrendiklerini diğer alanda kullanabilir.
+
+**Teknik açıdan bir örnek:** “Resim tanıma” için eğitilmiş büyük bir model düşünün (milyonlarca görüntü üzerinde eğitilmiş ve binlerce nesneyi tanıyabilen bir model olsun). Şimdi elimizde çok özel bir görev var: Diyelim sadece kedilerin belirli bir cinsini tespit etmek istiyoruz ya da tıbbi bir alanda röntgen görüntülerinden bir hastalığı saptayacağız. Sıfırdan model eğitmek yerine, genel resim tanıma modelini alıp, son katmanlarını veya bazı ayarlarını bu yeni veriyle **yeniden eğitmek (yani fine-tune etmek)** transfer öğrenimidir. Modelin önceki görevde öğrendiği temel görsel özellikler (kenarlar, şekiller, renkler gibi) yeni göreve taşınır ve sadece spesifik kısım öğretilir. Sonuç olarak, çok daha az veriyle iyi bir performans elde edilebilir.
+
+Günlük hayatta transfer öğrenimine bir diğer örnek de eğitim hayatımızdan olabilir: Lisede matematik öğrendiğimiz için üniversitede fizik derslerini daha kolay anlayabiliriz. Çünkü matematik bilgisini fiziğe transfer ediyoruz. Aynı şekilde, bir şirkette müşteri hizmetleri konusunda eğitilmiş bir yapay zekâ modelini alıp başka bir şirkette benzer müşteri sorularını yanıtlamak için uyarlamak da transfer öğrenimidir (temel dil becerilerini ve soru-cevap yapılarını zaten biliyordur, sadece yeni şirketin ürün bilgilerini öğrenmesi yeterli olur).
+
+
+## Encoder Nedir?
+
+Encoder kelime anlamıyla “**kodlayıcı**” demektir. Yapay zeka ve veri işleme bağlamında encoder, **veriyi bir formattan başka bir formata dönüştüren** veya daha kullanışlı bir temsilini çıkaran sistemdir. Veriyi ham halinden alıp, modelin daha kolay işleyebileceği bir biçime şifreler diyebiliriz. Bu şifrelemeden kastımız genellikle veriyi sayısal bir özelliğe dönüştürmek veya boyutunu/karmaşıklığını azaltmaktır.
+
+Örneğin, metin verisini ele alalım: Bir encoder, metindeki kelimeleri alıp her birini belirli boyutta bir sayı vektörüne çevirebilir (bu işleme embedding de denir). Model bu sayısal temsil üzerinden işlem yapar, çünkü matematiksel olarak anlam çıkarabilmesi için metnin sayılara çevrilmesi gerekir. Burada encoder görev yapmış olur. Benzer şekilde, bir görüntü işleme modelinde encoder, resmi alıp önemli özelliklerini çıkarabilir (köşeler, renk dağılımları, şekiller gibi) ve bu özellikleri bir vektör halinde temsil edebilir.
+
+**Günlük hayattan örneklerle:**
+
+- **Dosya sıkıştırma:** Bir ZIP programı, büyük bir dosyayı daha küçük bir sıkıştırılmış dosyaya çevirir. Aslında bu bir çeşit encoder işlemidir – orijinal veriyi alır, farklı bir formatta (daha küçük boyutlu) kodlar.
+- **Mors alfabesi:** Normal harflerle yazılmış bir mesajı mors koduna çevirmek de bir kodlama işlemidir. Burada encoder rolünü mesajı nokta ve çizgi dizisine çeviren kişi ya da cihaz üstlenir. Örneğin “SOS” kelimesini “... --- ...” şeklinde mors koduna encoder (kodlayıcı) çevirir.
+- **MP3 oluşturma:** Bir müzik CD’sindeki ham ses verisini alıp MP3 formatına dönüştüren yazılım bir encoderdır. Bu yazılım, sesi sıkıştırır ve daha küçük hale getirir​
+
+Encoder’ların amacı çoğunlukla veriyi standart hale getirmek, sıkıştırmak veya gizlemek olabilir​. Önemli bir nokta: Bir encoder ile veriyi dönüştürdükten sonra, orijinal haline geri çevirebilmek için bir decoder (kod çözücü) gerekir​
+. Zaten genellikle encoder ve decoder ikilisi beraber anılır (özellikle yapay zeka mimarilerinde, örneğin “encoder–decoder ağları”).Özetle, encoder veriyi alır şifreler/kodar, modelin anlayacağı dile çevirir diyebiliriz.
+
+## Decoder nedir?
+
+Decoder, encoder’ın tersine çalışan sistemdir; yani kodlanmış veriyi alıp orijinal veya istenen formata geri çeviren bileşendir. Türkçesiyle “çözümleyici” veya “kod çözücü” de diyebiliriz. Encoder nasıl veriyi şifrelediyse, decoder da o şifreyi çözer.
+
+Örneğin, biraz önceki örnekleri devam edelim:
+
+- ZIP ile sıkıştırılmış bir dosyayı açmak (unzip yapmak) decoder işidir. Decoder programı, sıkışmış veriyi alır ve orijinal dosyayı geri elde eder.
+- Mors koduyla “... --- ...” şeklinde alınan sinyali tekrar “SOS” harflerine çevirmek decoder’ın görevidir – mors kodunu çözer. Bu işi yapan kişi veya cihaz decoder rolünü üstlenir.
+- MP3 çalar bir decoder’dır; MP3 formatındaki sıkıştırılmış müzik dosyasını alır ve hoparlörden dinlediğimiz analog ses dalgalarına dönüştürür.
+
+Yapay zeka modellerinde de decoder önemli bir kavramdır. Özellikle **encoder–decoder** mimarileri adı verilen model tasarımlarında (örneğin makine çevirisi yapan sinir ağları, özetleme yapan modeller veya Görüntüden metin üreten modeller gibi), encoder gelen veriyi iç temsil olarak kodlar, decoder ise istenen çıktıyı üretir.
+
+Örneğin bir **çeviri modelinde**: İngilizce bir cümle encoder tarafından “anlam vektörüne” dönüştürülür; ardından decoder bu vektörü alıp diyelim ki Türkçe cümleye dönüştürür. Yani encoder metni anlar, decoder yeni dilde anlatır.
+
+Başka bir kullanım alanı olarak, GPT gibi dil modellerinde de aslında jeneratif kısım bir decoder gibidir (aşağıda GPT’yi açıklayacağız). Verilen bir başlangıç metnine dayanarak devamını üretmek, bir anlamda kodlanmış dili gerçek cümlelere çözümlemek demektir.
+
+Özetle, **decoder = kod çözme.** Encoder ile elde ettiğimiz ara temsili, insanın veya hedef uygulamanın kullanacağı forma decoder geri çevirir. Birçok sistemde encoder ve decoder birlikte çalışır: Biri bilgiyi paketler, diğeri açar.
+
+## GPT (Generative Pre-trained Transformer) Nedir?
+
+GPT, İngilizce “Generative Pre-trained Transformer” ifadesinin kısaltmasıdır (Türkçesi: Üretici, Ön-Eğitimli Dönüştürücü anlamına gelir)​ . Bu, OpenAI tarafından geliştirilmiş bir yapay zeka model türüdür. GPT modelleri, özellikle **metin üretmek** (yeni cümleler, paragraflar oluşturmak) üzere tasarlanmıştır ve dil işleme alanında çığır açmışlardır.
+
+Tanımdaki kelimeleri parçalayarak anlayalım:
+
+- **Pre-trained (Ön-eğitimli):** GPT modeli, devasa miktarda metin veri üzerinde önceden eğitilmiştir. Örneğin kitaplar, makaleler, web sayfaları gibi çok geniş bir yazılı veri kütüphanesini okumuş ve genel dil yapısını, bilgisini öğrenmiştir. Bu ön eğitim sayesindedir ki GPT, dilin gramerini, kelime anlamlarını, hatta dünya ile ilgili genel bilgileri istatistiksel olarak bünyesinde barındırır.
+- **Generative (Üretici):** GPT, yeni ve orijinal metin üretir. Yani ona bir başlangıç cümlesi verdiğinizde, sonrasını kendi yazar; soru sorarsanız mantıklı bir yanıt üretir; bir konu verirsiniz o konuda makale bile taslaklayabilir. “Üretici” olması, sadece var olanı sınıflandırmak veya analiz etmek değil, yeni içerik oluşturmak olduğu anlamına gelir.
+- **Transformer:** Bu, GPT’nin mimari yapısının adıdır. Transformer, 2017 yılında ortaya çıkan ve dil işleme görevlerinde çok başarılı olan bir sinir ağı mimarisidir. Transformers, dikkat mekanizmaları kullanarak dildeki kelimeler arasındaki ilişkileri öğrenir. GPT de bir transformer mimarisi üzerine kuruludur ve bu sayede uzun metin ilişkilerini bile başarıyla yakalayabilir.
+
+
+GPT modelinin çalışma prensibini basitçe şöyle özetleyebiliriz: İstatistiksel dil tamamlama. Yani çok okuduğu için, bir cümlede bir kelimeden sonra hangi kelimenin gelebileceğini olasılıksal olarak çok iyi tahmin edebilir. Bu tahminleri ard arda zincirleyerek bir paragraf üretebilir. Örneğin, “Bugün hava çok...” diye başlayan bir cümleyi gördüğünde, devamına “**sıcak**” veya “**güzel**” gibi bir kelime gelme olasılığının yüksek olduğunu “**bilir**”. Elbette olay sadece kelime tahmini değil, daha karmaşık cümle yapıları ve tutarlılık da gözetiliyor; ama temel mantık, metni parça parça oluşturmak ve her adımda en uygun kelimeyi (veya ifadeyi) seçmek.
+
+En bilinen örnek ChatGPT’dir. ChatGPT, GPT mimarisini kullanan bir sohbet robotudur ve insanlarla doğal bir dilde diyalog kurabilir. Siz bir şey sorarsınız veya talep edersiniz, o da size anlaşılır ve bağlama uygun bir yanıt verir. Örneğin ChatGPT’den bir hikaye anlatmasını isteyebilirsiniz, size özgün bir hikaye yazabilir. Ya da bir makale hakkında özet isteyebilirsiniz, o metni okuyup özetleyebilir. Ayrıca GPT tabanlı modeller, e-posta taslakları yazma, çeviri yapma, kod üretme, soruları yanıtlama, hatta şiir yazma gibi pek çok amaçla kullanılabiliyor.
+
+Önemli bir nokta: GPT bir bilgiyi araştırmaz, daha çok öğrendiği geniş bilgi havuzundan yola çıkarak yanıt üretir. Yani verdiği cevaplar dilbilgisel ve bağlamsal olarak genellikle doğru ve mantıklıdır, fakat bu cevapların doğruluğu modelin eğitim aldığı veriye dayanır. Bu nedenle, ChatGPT gibi modeller bazen inandırıcı görünen hatalar yapabilir; çünkü gerçekleri değil, olasılıkları dillendirir.
+
+Özetle GPT, çok büyük bir beyinle eğitilmiş bir yazar gibidir. Ne hakkında yazmasını isterseniz, eğitiminde gördüğü bilgileri kullanarak o konuda size akıcı bir metin oluşturabilir. Günümüzde yapay zekâ alanında GPT ve benzeri büyük dil modelleri, insan-dil etkileşiminde devrim yaratmış durumda. Artık müşteri hizmetlerinde otomatik yanıt veren botlar, akıllı asistanlar, içerik üretimine yardımcı araçlar gibi pek çok alanda GPT benzeri AI modelleri kullanılmaktadır.
