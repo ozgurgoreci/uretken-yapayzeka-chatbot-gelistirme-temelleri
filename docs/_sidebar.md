@@ -9,12 +9,12 @@
     * [Yapay Zeka Destekli Chatbotların Yükselişi](lessons/02_chatbot-kavrami.md#yapay-zeka-destekli-chatbotların-yükselişi)
     * [Günümüzde Chatbotların Kullanım Alanları](lessons/02_chatbot-kavrami.md#günümüzde-chatbotların-kullanım-alanları)
 * Chatbot Geliştirmeden Önce Müşteriye Sorulması Gereken Temel Sorular
-    * [Gereksinimlerin Belirlenmesi](lessons/03-gelistirmeden-once.md#chatbot-geliştirmeden-önce-müşteriye-sorulması-gereken-temel-sorular)
-    * [Hedef Kullanıcı Kitlesi ve Etkileşim Modeli](lessons/03-gelistirmeden-once.md#hedef-kullanıcı-kitlesi-ve-etkileşim-modeli)
-    * [Teknoloji Seçimi ve Maliyet Planlaması)](lessons/03-gelistirmeden-once.md#teknoloji-seçimi-ve-maliyet-planlaması)
-    * [Entegrasyon Süreçleri ve Uyumluluk](lessons/03-gelistirmeden-once.md#entegrasyon-süreçleri-ve-uyumluluk)
-    * [Chatbotun Kullanıcı Verilerini İşleme Politikası](lessons/04_chatbot-gelistirmeden-once.md#chatbotun-kullanıcı-verilerini-i̇şleme-politikası)
-    * [Chatbotun Farklı Kanallara Uyarlanması](lessons/03-gelistirmeden-once.md#chatbotun-farklı-kanallara-uyarlanması)
+    * [Gereksinimlerin Belirlenmesi](lessons/03_chatbot-gelistirmeden-once#chatbot-geliştirmeden-önce-müşteriye-sorulması-gereken-temel-sorular)
+    * [Hedef Kullanıcı Kitlesi ve Etkileşim Modeli](lessons/03_chatbot-gelistirmeden-once#hedef-kullanıcı-kitlesi-ve-etkileşim-modeli)
+    * [Teknoloji Seçimi ve Maliyet Planlaması)](lessons/03_chatbot-gelistirmeden-once#teknoloji-seçimi-ve-maliyet-planlaması)
+    * [Entegrasyon Süreçleri ve Uyumluluk](lessons/03_chatbot-gelistirmeden-once#entegrasyon-süreçleri-ve-uyumluluk)
+    * [Chatbotun Kullanıcı Verilerini İşleme Politikası](lessons/03_chatbot-gelistirmeden-once.md#chatbotun-kullanıcı-verilerini-i̇şleme-politikası)
+    * [Chatbotun Farklı Kanallara Uyarlanması](lessons/03_chatbot-gelistirmeden-once#chatbotun-farklı-kanallara-uyarlanması)
 * Chatbot Çeşitleri ve Kullanım Senaryoları
     * [Menü veya Button Tabanlı Chatbotlar](lessons/04_chatbotcesitlerikarsilastirma.md#menü-veya-button-tabanlı-chatbotlar)
     * [Kural Tabanlı Chatbotlar](lessons/04_chatbotcesitlerikarsilastirma.md#kural-tabanlı-chatbotlar)
