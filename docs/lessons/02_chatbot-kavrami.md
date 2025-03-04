@@ -24,7 +24,7 @@ Chatbotlar, kullanıcı deneyimini iyileştirmek, iş süreçlerini hızlandırm
 
 Chatbot teknolojisi, yapay zekâ ve doğal dil işleme alanındaki gelişmelerle birlikte evrim geçirmiş ve günümüzde geniş bir kullanım alanına ulaşmıştır. İlk örneklerinden itibaren, chatbotlar insan-makine etkileşimini geliştirmeye yönelik önemli bir araç olarak kabul edilmiştir. Bu süreçte, farklı dönemlerde geliştirilen chatbotlar, hem teknolojik ilerlemeleri hem de kullanıcı ihtiyaçlarını yansıtan belirgin aşamalarla öne çıkmaktadır.
 
-## Erken Dönem Chatbotlar (1960’lar - 1990’lar)
+## Erken Dönem Chatbotlar
 
 * **ELIZA (1966):** Joseph Weizenbaum tarafından geliştirilen ELIZA, modern chatbotların temelini atan ilk yazılımdır. Psikoterapist simülasyonu olarak tasarlanan bu chatbot, belirli kalıplara dayalı yanıtlar üreterek kullanıcılarla diyalog kurabilmiştir. ELIZA’nın en bilinen versiyonu, Rogerian psikoterapist rolü oynayarak kullanıcılara empati ile yaklaşan yanıtlar vermesiyle dikkat çekmiştir..
 * **PARRY (1972):** Stanford Üniversitesi’nden Kenneth Colby tarafından geliştirilen PARRY, ELIZA’dan farklı olarak şizofreni hastası gibi davranacak şekilde tasarlanmıştır. Psikiyatrik semptomları simüle eden ilk chatbot olarak kabul edilen PARRY, belirli bir kişilik modeli üzerinden cevaplar üretmiştir.
