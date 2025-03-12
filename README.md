@@ -1,4 +1,4 @@
-# Üretken Yapay Zeka Yardımı ile Chatbot Geliştirme Temelleri
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0# Üretken Yapay Zeka Yardımı ile Chatbot Geliştirme Temelleri
 
 Bu ders, öğrencilerin üretken yapay zeka teknolojilerini kullanarak chatbot geliştirme süreçlerini derinlemesine kavramalarını ve bu alanda temel uygulamalar geliştirmelerini sağlamayı amaçlamaktadır. Marmara Üniversitesi ve Yıldız Teknik Üniversitesi'nde sunulacak olan bu eğitim kapsamında öğrenciler:
 
@@ -10,9 +10,13 @@ Bu ders, öğrencilerin üretken yapay zeka teknolojilerini kullanarak chatbot g
 ## Katkıda Bulunanlar
 Bu projeye katkıda bulunan geliştiriciler:
 
-![Berkay Zaim](https://img.shields.io/badge/Katkıda_Bulunan-İsim_1-blue?style=for-the-badge&logo=github)
-![İsim 2](https://img.shields.io/badge/Katkıda_Bulunan-İsim_2-blue?style=for-the-badge&logo=github)
-![İsim 3](https://img.shields.io/badge/Katkıda_Bulunan-İsim_3-blue?style=for-the-badge&logo=github)
+<div align="center">
+
+  <a href="https://github.com/berkayzaimdev" target="_blank">
+    <img src="https://github.com/berkayzaimdev" width="100" style="border-radius: 50%; border: 2px solid #ddd; margin: 5px;" alt="İsim 1">
+  </a>
+</div>
+
 
 
 ![image](https://github.com/user-attachments/assets/f2955435-6052-4fea-a273-ba59f9df40bf)
