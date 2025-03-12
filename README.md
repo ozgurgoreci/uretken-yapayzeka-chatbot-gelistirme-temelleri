@@ -7,4 +7,12 @@ Bu ders, öğrencilerin üretken yapay zeka teknolojilerini kullanarak chatbot g
 * Doğal dil işleme ve diyalog yönetimi prensiplerini anlayacak,
 *    Gerçek dünya senaryolarına uygun chatbot uygulamaları geliştirme deneyimi kazanacaktır.
 
+## Katkıda Bulunanlar
+Bu projeye katkıda bulunan geliştiriciler:
+
+![Berkay Zaim](https://img.shields.io/badge/Katkıda_Bulunan-İsim_1-blue?style=for-the-badge&logo=github)
+![İsim 2](https://img.shields.io/badge/Katkıda_Bulunan-İsim_2-blue?style=for-the-badge&logo=github)
+![İsim 3](https://img.shields.io/badge/Katkıda_Bulunan-İsim_3-blue?style=for-the-badge&logo=github)
+
+
 ![image](https://github.com/user-attachments/assets/f2955435-6052-4fea-a273-ba59f9df40bf)
