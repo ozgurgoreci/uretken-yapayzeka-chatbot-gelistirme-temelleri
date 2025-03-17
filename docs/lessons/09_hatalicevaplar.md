@@ -7,7 +7,10 @@
 
 ![image](https://github.com/user-attachments/assets/b6d01fd7-095b-47fe-8ae2-a5136b4b4014)
 
-![image](https://github.com/user-attachments/assets/26dde7b4-29a5-4310-a31f-b24728290010)
+## Teori 1 Gerçekleşme Süreci 
+
+![image](https://github.com/user-attachments/assets/3f5fc986-85f6-40f4-879c-a145538ea25b)
+
 
 
 ## Teori 2
@@ -18,4 +21,7 @@
 ![image](https://github.com/user-attachments/assets/ea43d832-2261-4150-af45-f6f2b159c6e6)
 
 
-![image](https://github.com/user-attachments/assets/f1553bb9-c30d-44f3-8b5d-10321b7f4862)
+## Teori 2 Gerçekleşme Süreci
+
+![image](https://github.com/user-attachments/assets/1a661098-66a9-4522-a3f9-94d42acfaff5)
+
